@@ -1,2 +1,6 @@
 @import "./block/style.css";
-@import "./block/style.css";
+@import "./block/fonts.css";
+@import "./block/margins.css";
+@import "./block/content.css";
+@import "./block/element.css";
+@import "./block/wood.css";

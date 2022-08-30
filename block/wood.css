@@ -1,0 +1,48 @@
+.wood {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.wood__title {
+  margin-bottom: 30px;
+}
+
+.wood__text {
+  margin-bottom: 30px;
+}
+
+.wood__border-list {
+  font-style: italic;
+}
+
+.wood__image1 {
+  max-width: 1080px;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.wood__image2 {
+  max-width: 600px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.wood__description {
+  margin-bottom: 30px;
+}
+
+.wood__border {
+  border: 1px solid #000;
+  margin-bottom: 30px;
+}
+
+.wood__border-img {
+  display: block;
+  max-width: 1080px;
+}
+
+.wood__border-text {
+  color: #5E5E5E;
+  padding: 15px 30px;
+}

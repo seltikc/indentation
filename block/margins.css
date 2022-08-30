@@ -1,0 +1,20 @@
+.margins {
+  padding-top: 60px;
+  padding-bottom: 25px;
+}
+
+.margins__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 60px;
+  line-height: 120%;
+  margin-bottom: 30px;
+}
+
+.margins__description {
+  margin-bottom: 30px;
+}
+
+.margins__description:last-child {
+  margin-bottom: 0;
+}

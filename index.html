@@ -3,17 +3,65 @@
 <head>
   <meta charset="UTF-8">
   <title>Indentation</title>
-  <link rel="preload" href="fonts/roboto-v30-latin-regular.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/roboto-v30-latin-700.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/roboto-v30-latin-900.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="fonts/roboto-v30-latin-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-900.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/roboto-v30-latin_cyrillic-italic.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="index.css">
 </head>
 <body>
   <main class="main">
-  <section>
+
+  <section class="margins">
     <div class="container">
-      <h1>Привет мир!</h1>
+      <h1 class="margins__title">Отступы в вёрстке: margin и padding</h1>
+      <p class="margins__description">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее —          речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в         любую его часть. При этом другие части кода продолжат нормально работать</p>
+      <p class="margins__description">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих,       но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
+    </div>
+  </section>
+
+  <section class="content">
+    <div class="container wrap">
+      <h2 class="content__title">Содержание:</h2>
+      <ol class="content__list">
+        <li class="content__item"><a class="content__link" href="">Отступ задается от предыдущего элемента к следующему</a></li>
+        <li class="content__item"><a class="content__link" href="">Отступ задается последнему возможному элементу в DOM-дереве</a></li>
+        <li class="content__item"><a class="content__link" href="">Для последнего элемента группы отступ обнуляется</a></li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="element">
+    <div class="container">
+      <h3 class="element__title subtitle">Отступ задается от предыдущего элемента к следующему: от первого ко второму, сверху вниз, слева направо.</h3>
+      <img class="element__img" src="image/cate.png" alt="Коты">
+      <p class="element__text"><strong>ВАЖНО:</strong> <span class="element__span">margin</span> всегда задают от предыдущего элемента к следующему.</p>
+      <p class="element__text">Свойство margin необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span             class="element__span">margin-right</span>
+        и <span class="element__span">margin-bottom</span>.</p>
+      <p class="element__text">(!) Свойства <span class="element__span">margin-left</span> и <span class="element__span">margin-top</span> используются крайне редко.</p>
+      <p class="element__text">Для <span class="element__span">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения      области ссылки.</p>
+      <div class="wrapper">
+        <img class="element__img2" src="image/cate2.png" alt="Кот">
+        <p class="element__text2">Отступ внутри блока сверху или слева реализуется через <span>padding-top</span> и <span>padding-left </span>родителя.</p>
+        <p class="element__text2">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
+        <p class="element__text2">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="wood">
+    <div class="container">
+      <h3 class="wood__title subtitle">Отступ задается последнему возможному элементу в DOM-дереве</h3>
+      <p class="wood__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
+      <img class="wood__image1" src="image/section.png" alt="Разметка">
+      <img class="wood__image2" src="image/recipe.png" alt="Рецепты">
+      <p class="wood__description">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+      <div class="wood__border">
+        <img class="wood__border-img" src="image/recipe-code.png" alt="Html разметка">
+        <p class="wood__border-text">ВАЖНО: здесь <span class="wood__border-list">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</p>
+      </div>
+      <p>Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
     </div>
   </section>
 

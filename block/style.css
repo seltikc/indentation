@@ -12,10 +12,10 @@ html {
 body {
   min-width: 320px;
   min-height: 100vh;
-  font-family: Roboto, Arial, sans-serif;
+  font-family: 'Roboto', 'Arial', sans-serif;
   font-weight: 400;
   font-size: 20px;
-  line-height: 24;
+  line-height: 24px;
 }
 
 
@@ -74,8 +74,15 @@ iframe {
 */
 
 .container {
-  max-width: 1240px;
+  max-width: 1140px;
   padding: 0 30px;
   margin: 0 auto;
+}
+
+.wrap {
+  max-width: 1140px;
+  margin: 0 auto;
+  background: #F1F1F1;
+  border-radius: 10px;
 }
 

@@ -1,0 +1,23 @@
+.content {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.wrap {
+  padding: 25px 45px;
+}
+
+.content__title {
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 120%;
+  margin-bottom: 20px;
+}
+
+.content__list {
+  padding-left: 30px;
+  margin: 0;
+}
+.content__link {
+  color: #02535F;
+}
