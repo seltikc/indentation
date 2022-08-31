@@ -1,0 +1,16 @@
+.result {
+  padding-top: 25px;
+  padding-bottom: 50px;
+}
+
+.result__title {
+  margin-bottom: 20px;
+}
+
+.result__item {
+  margin-bottom: 10px;
+}
+
+.result__item:last-child {
+  margin-bottom: 30px;
+}

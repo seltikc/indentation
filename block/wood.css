@@ -46,3 +46,21 @@
   color: #5E5E5E;
   padding: 15px 30px;
 }
+
+.wood__span {
+  font-style: italic;
+}
+
+.wood__image3 {
+  display: block;
+  margin: 0 auto;
+  max-width: 964px;
+  margin-bottom: 30px;
+}
+
+.wood__image4 {
+  display: block;
+  margin: 0 auto;
+  max-width: 1022px;
+  margin-bottom: 30px;
+}

@@ -4,9 +4,9 @@
   display: flow-root;
 }
 
-.wrapper {
+.element__wrap {
   display: inline-block;
-  padding-top: 30px;
+  margin-bottom: 30px;
 }
 
 .content__title, .subtitle {

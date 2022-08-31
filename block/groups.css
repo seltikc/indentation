@@ -1,0 +1,56 @@
+.groups {
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.groups__title {
+  margin-bottom: 30px;
+}
+
+.groups__text {
+  margin-bottom: 30px;
+}
+
+.groups__text:last-child {
+}
+
+.groups__image {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.groups__image1 {
+  display: block;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.groups__image2 {
+  display: block;
+  max-width: 1080px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.groups__image3 {
+  display: block;
+  max-width: 806px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.groups__image4 {
+  display: block;
+  max-width: 317px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.groups__image5 {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto;
+}
