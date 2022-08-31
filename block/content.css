@@ -7,6 +7,10 @@
   padding: 25px 45px;
 }
 
+.content__list {
+  color: #02535F;
+}
+
 .content__title {
   font-weight: 700;
   font-size: 44px;
